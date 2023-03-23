@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css");
+
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-decoration-color: none;
+    list-style: none;
+}
+
+
+* {
+    margin: 10px;
+}
+
+main {
+    background-color: rgba(242, 242, 221, 0.264);
+    padding: 10px;
+
+}
+
+footer {
+    background-color: rgb(228, 239, 232);
+    font-weight: 700;
+    padding: 10px;
+}
+
+hr {
+    border-top: 2px solid rgb(195, 226, 155) !important;
+}
+
+.div-cotizar {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.indexcards {
+    padding: 20px;
+    grid-area: indexcards;
+    background: #475A51;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #F4F3EE;
+}
+
+.indexcards .card {
+    height: auto;
+    color: #475A51;
+    margin-top: 20px;
+}
+
+.indexcards .card:hover {
+    transform: scale(1.03);
+  }
+
+.indexcards .card .card-body {
+    display: flex;
+    flex-direction: column;
+    text-justify: auto;
+}
+
+.indexcards .card .card-body .btn {
+    background-color: #FE6340;
+    border: #FE6340;
+}
+
+.indexcards .card .card-body .btn:hover {
+    background-color: #475A51;
+    border: #475A51;
+}
+
+@media (max-width: 900px) {
+    .indexcards {
+        display: flex;
+        flex-direction: column;
+    }
+
+.indexcards .cards{
+    padding: 20px;
+}
+}
